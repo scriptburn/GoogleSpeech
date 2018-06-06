@@ -10,7 +10,7 @@
 | the IoC container for the system binding all of the various parts.
 |
 */
-define('KEYMAN_VERSION',"1.0.0");
+define('KEYMAN_VERSION',"1.0.1");
 
 $app = new Illuminate\Foundation\Application(
     realpath(__DIR__.'/../')
