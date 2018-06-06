@@ -1,0 +1,33 @@
+Language,"Voice type","Language code","Voice name","SSML Gender"
+"Dutch (Netherlands)",Standard,"nl-NL","nl-NL-Standard-A",FEMALE
+"English (Australia)",Standard,"en-AU","en-AU-Standard-A",FEMALE
+"English (Australia)",Standard,"en-AU","en-AU-Standard-B",MALE
+"English (Australia)",Standard,"en-AU","en-AU-Standard-C",FEMALE
+"English (Australia)",Standard,"en-AU","en-AU-Standard-D",MALE
+"English (UK)",Standard,"en-GB","en-GB-Standard-A",FEMALE
+"English (UK)",Standard,"en-GB","en-GB-Standard-B",MALE
+"English (UK)",Standard,"en-GB","en-GB-Standard-C",FEMALE
+"English (UK)",Standard,"en-GB","en-GB-Standard-D",MALE
+"English (US)",WaveNet,"en-US","en-US-Wavenet-A",MALE
+"English (US)",WaveNet,"en-US","en-US-Wavenet-B",MALE
+"English (US)",WaveNet,"en-US","en-US-Wavenet-C",FEMALE
+"English (US)",WaveNet,"en-US","en-US-Wavenet-D",MALE
+"English (US)",WaveNet,"en-US","en-US-Wavenet-E",FEMALE
+"English (US)",WaveNet,"en-US","en-US-Wavenet-F",FEMALE
+"English (US)",Standard,"en-US","en-US-Standard-B",MALE
+"English (US)",Standard,"en-US","en-US-Standard-C",FEMALE
+"English (US)",Standard,"en-US","en-US-Standard-D",MALE
+"English (US)",Standard,"en-US","en-US-Standard-E",FEMALE
+French,Standard,"fr-FR","fr-FR-Standard-C",FEMALE
+French,Standard,"fr-FR","fr-FR-Standard-D",MALE
+"French (Canada)",Standard,"fr-CA","fr-CA-Standard-A",FEMALE
+"French (Canada)",Standard,"fr-CA","fr-CA-Standard-B",MALE
+"French (Canada)",Standard,"fr-CA","fr-CA-Standard-C",FEMALE
+"French (Canada)",Standard,"fr-CA","fr-CA-Standard-D",MALE
+German,Standard,"de-DE","de-DE-Standard-A",FEMALE
+German,Standard,"de-DE","de-DE-Standard-B",MALE
+Japanese,Standard,"ja-JP","ja-JP-Standard-A",FEMALE
+"Portugese (Brazil)",Standard,"pt-BR","pt-BR-Standard-A",FEMALE
+Spanish,Standard,"es-ES","es-ES-Standard-A",FEMALE
+Swedish,Standard,"sv-SE","sv-SE-Standard-A",FEMALE
+Turkish,Standard,"tr-TR","tr-TR-Standard-A",FEMALE
