@@ -74,7 +74,7 @@
                                 <div class="col-lg-3">
                                     <label for="speech_voice_speed">Speed</label>
                                     <br/>
-                                    <input type="text" classs="slider_with_label" id="speech_voice_speed" name="speech_voice_speed" data-slider-tooltip="always" data-provide="slider" ' data-slider-min="0.25" data-slider-tooltip-position="bottom" data-slider-max="4" data-slider-step="0.30" data-slider-value="1" />
+                                    <input type="text" classs="slider_with_label" id="speech_voice_speed" name="speech_voice_speed" data-slider-tooltip="always" data-provide="slider" ' data-slider-min="0.25" data-slider-tooltip-position="bottom" data-slider-max="4" data-slider-step="0.05" data-slider-value="1" />
                                 </div>
                                 <div class="col-lg-3">
                                     <label for="speech_voice_pitch">Pitch</label><br/>
