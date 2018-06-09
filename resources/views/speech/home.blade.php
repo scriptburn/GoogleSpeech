@@ -72,13 +72,15 @@
                                     </select>
                                 </div>
                                 <div class="col-lg-3">
-                                    <label for="speech_voice_speed">Speed</label>
+                                    <label for="speech_voice_speed">Speed <a style="padding-left:5px" class="slider-edit" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+</a></label>
                                     <br/>
-                                    <input type="text" classs="slider_with_label" id="speech_voice_speed" name="speech_voice_speed" data-slider-tooltip="always" data-provide="slider" ' data-slider-min="0.25" data-slider-tooltip-position="bottom" data-slider-max="4" data-slider-step="0.05" data-slider-value="1" />
+                                    <input type="text" class="slider_with_label" data-label="Speed" id="speech_voice_speed" name="speech_voice_speed" data-slider-tooltip="always" data-provide="slider" ' data-slider-min="0.25" data-slider-tooltip-position="bottom" data-slider-max="4" data-slider-step="0.05" data-slider-value="1" />
                                 </div>
                                 <div class="col-lg-3">
-                                    <label for="speech_voice_pitch">Pitch</label><br/>
-                                    <input type="text" id="speech_voice_pitch" data-slider-tooltip="always"  name="speech_voice_pitch" data-provide="slider"    data-slider-min="-20" data-slider-max="20" data-slider-step="1"  data-slider-tooltip-position="bottom" data-slider-value="0" />
+                                    <label for="speech_voice_pitch">Pitch <a style="padding-left:5px" class="slider-edit" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+</a></label><br/>
+                                    <input type="text" class="slider_with_label"  id="speech_voice_pitch"  data-label="Pitch" data-slider-tooltip="always"  name="speech_voice_pitch" data-provide="slider"    data-slider-min="-20" data-slider-max="20" data-slider-step="1"  data-slider-tooltip-position="bottom" data-slider-value="0" />
                                 </div>
                             </div>
                         </div>
@@ -103,6 +105,23 @@
 var speech_voices={!! json_encode($voices) !!};
 var cur_lang="{{ $cur_lang }}";
  $( document ).ready(function() {
+
+
+    $('.slider-edit').on('click',function(){
+    
+    $slider=$(this).parent().parent().find('.slider_with_label');
+    input=prompt("Please enter "+ $($slider).data('label'));
+    if(input<$($slider).data('slider-min') || input>$($slider).data('slider-max')  )
+    {
+        alert("Please choose value in range " + $($slider).data('slider-min')  + " to " + $($slider).data('slider-max') );
+        return;
+    }
+    $($slider).slider().slider('setValue',input);
+      
+
+    });
+
+
     var keys=Object.keys(speech_voices);
     html="";
     for(i=0;i<keys.length;i++)
